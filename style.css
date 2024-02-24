@@ -1,0 +1,139 @@
+@font-face {
+    font-family: helv;
+    src: url(./Fonts/HelveticaNowText-Regular.woff2);
+}
+
+@font-face {
+    font-family: futura;
+    src: url(./Fonts/Futura-Bold.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+.page1{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+    padding: 0 2vw;
+    padding-top: 33vh;
+    /* justify-content: space-between;
+    display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page1 h1{
+    text-transform: uppercase;
+    font-size: 15.5vw;
+    font-family: futura;
+    color: black;
+    line-height: 14vw;
+    letter-spacing: -5px;
+    display: inline-block;
+}
+/* .page1 h1{
+    text-transform: uppercase;
+    font-size: 15.5vw;
+    font-family: futura;
+    color: black;
+    line-height: 14vw;
+    letter-spacing: -5px;
+} */
+.page1-book{
+    /* background-color: red; */
+    padding-top: 5vw;
+    height: 25vw;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vw 1vw;
+    /* padding-top: 10vw; */
+}
+.page2 .elem{
+    height: 100%;
+    width: 31%;
+    /* background-color: green; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1.2;
+}
+.page2 .elem .dets{
+    height: 60px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: pink;
+}
+.page2 .elem .dets:hover{
+    height: 200px;
+}
+
+.page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    position: relative;
+    height: 55vh;
+    width: 40vw;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .page1 h1{
+        text-transform: uppercase;
+        font-size: 15.5vw;
+        font-family: futura;
+        color: black;
+        line-height: 14vw;
+        letter-spacing: -5px;
+        display: inline-block;
+    }
+}
